@@ -1,0 +1,16 @@
+.button{
+  border: none;
+  padding-block: 0.8rem;
+  padding-inline: 3rem;
+  background-color: var(--color-quaternary);
+  border-radius: 40px;
+  font-size: 0.9rem;
+  color: #343a1fb7;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
