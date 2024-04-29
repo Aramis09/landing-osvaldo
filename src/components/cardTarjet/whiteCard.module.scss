@@ -1,0 +1,24 @@
+.container{
+  background-color: white;
+  padding: 2%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  min-height: 50vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000b7;
+}
+
+
+@media screen and (min-width: 270px) and (max-width: 1024px) {
+  .container{
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2%;
+
+  }
+}

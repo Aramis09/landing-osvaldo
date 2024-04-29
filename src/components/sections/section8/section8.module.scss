@@ -1,0 +1,17 @@
+.container{
+  background-color: var(--color-text);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 25%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+
+@media screen and (min-width: 270px) and (max-width: 1024px) {
+  .container{
+    padding-inline: 10%;
+    padding-bottom: auto;
+  }
+}

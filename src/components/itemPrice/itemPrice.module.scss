@@ -1,0 +1,37 @@
+.container{
+  color: black;
+  background-color: white;
+  padding-block: 2.5%;
+  padding-inline: 3%;
+  border-radius: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3rem;
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.471);
+  transition: transform 0.2s;
+  .firstText,b {
+    color: var(--color-secondary);
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .price{
+    b {
+      font-size: 1.8rem;
+    }
+  }
+  button {
+    width: 100%;
+  }
+}
+
+
+.container:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+

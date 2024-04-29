@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  padding-block: 5%;
+  padding-inline: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .firstText {
+    color: var(--color-text);
+    b{
+      color: white;
+    }
+  }
+  .secondText{
+    color: white;
+  }
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4%;
+    padding-inline: 15%;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  padding: 1.5rem;
+  background-color: var( --color-primary);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color:var(--color-text) ;
+  font-weight: 600;
+
+  img {
+    width: 1.3rem;
+    position: relative;
+  }
+}
+
+
+
+
+@media screen and (min-width: 270px) and (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+    font-size: 1rem;
+
+  }
+}

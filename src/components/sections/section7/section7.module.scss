@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 20%;
+  padding-inline: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  background-image: url('../../../assets/background/verduras3.jpg');
+  color: white;
+  background-size: cover;
+  position: relative;
+  h3{
+    text-align: center;
+    font-size: 2rem;
+    
+  }
+  p{
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 80%;
+    font-weight: bold;
+
+  }
+
+}
+
+
+@media screen and (min-width: 270px) and (max-width: 1024px) {
+  .container {
+    padding-inline: 10%;
+
+    h3{
+      text-align: center;
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.1rem;
+      max-width: 100%;
+    }
+
+  }
+}

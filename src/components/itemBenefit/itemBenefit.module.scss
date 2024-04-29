@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  overflow: hidden;
+  position: relative;
+  h3{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-secondary);
+  }
+.containerItems{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.8rem;
+  .item {
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    img{
+      width: 1.5rem;
+    }
+  }
+
+}
+  span {
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: var(--color-secondary);
+
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--color-secondary);
+    transform: rotate(45deg);
+    width: 100%;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    min-height: 50px;
+    font-weight: bold;
+    right: -360px;
+    top: 70px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.533);
+    transition: all 0.2s;
+    animation: promotion 5s infinite linear;
+    @keyframes promotion {
+      0% {
+        background-color: #f2644b;
+      }
+      50% {
+        background-color: #6d2936;
+        
+      }
+      100% {
+        background-color: #f2644b;
+        
+      }
+    }
+  }
+  label:hover {
+    font-size: 1.5rem;
+    cursor: pointer;
+
+  }
+  .containerPrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  button{
+    padding-block:1rem ;
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1537px) {
+  .container{
+    label {
+      font-size: 1rem;
+      right: -270px;
+      top: 50px;
+    }
+    label:hover {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 270px) and (max-width: 1024px) {
+  .container {
+    padding: 5%;
+    gap: 1rem;
+    h3{
+      color: var(--color-text);
+    }
+  .containerItems{
+    gap: 1.5rem;
+    .item {
+     
+      img{
+        width: 1rem;
+      }
+    }
+  
+  }
+
+    label {
+      display: none;
+    }
+    label:hover {
+      font-size: 1.5rem;
+      cursor: pointer;
+  
+    }
+    .containerPrice{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-secondary);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    button{
+      padding-block:1rem ;
+      font-size: 1.3rem;
+      white-space: nowrap;
+    }
+  }
+
+}
