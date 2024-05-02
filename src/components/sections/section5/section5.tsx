@@ -1,10 +1,10 @@
 import { itemsSection5 } from "../../../utils/consts";
-import CardImage from "../../cardImage/cardImage";
-import s from "./viewCardImages.module.scss";
+import ItemSection5 from "../../itemSection5/itemSection5";
+import s from "./section5.module.scss";
 
-export default function ViewCardImages() {
+export default function Section5() {
   return (
-    <div className={s.container}>
+    <section className={s.container} id="section5">
       <h3>Is WelloryX Right for you ?</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
@@ -14,9 +14,9 @@ export default function ViewCardImages() {
       </p>
       <div className={s.containerItems}>
         {itemsSection5.map((item) => (
-          <CardImage text={item.text} image={item.img} />
+          <ItemSection5 text={item.text} image={item.img} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

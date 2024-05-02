@@ -4,7 +4,7 @@ import ButtonGreen from "../../buttonGreen/buttonGreen";
 
 export default function Section3() {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="section3">
       <div className={s.containerData}>
         <h2>Utiliza nuestra tecnología para potenciar tus consultas</h2>
         <p>
@@ -27,7 +27,7 @@ export default function Section3() {
       </div>
 
       <div className={s.containerImage}>
-        <img src={imageStonks} alt="stonks" />
+        <img loading="lazy" src={imageStonks} alt="stonks" />
       </div>
     </div>
   );

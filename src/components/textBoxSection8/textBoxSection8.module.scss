@@ -15,7 +15,8 @@
     width: 100%;
     font-size: 2rem;
     text-align: center;
-    color: var(--color-secondary);
+    color: #F7901E ;
+
   }
 .containerItems{
   display: flex;
@@ -26,13 +27,17 @@
   .item {
     color: var(--color-secondary);
     display: flex;
-    flex-direction: row;
-    justify-content: start;
     align-items: center;
+    justify-content: start;
     gap: 1rem;
     font-weight: bold;
+    width: 100%;
     img{
       width: 1.5rem;
+    }
+    p{
+      text-align: left;
+
     }
   }
 
@@ -64,14 +69,18 @@
     animation: promotion 5s infinite linear;
     @keyframes promotion {
       0% {
-        background-color: #f2644b;
+        background-color: #F7901E ;
       }
       50% {
-        background-color: #6d2936;
+        background-color: #2FBA17;
         
       }
+      80%{
+        background-color: #F7901E ;
+
+      }
       100% {
-        background-color: #f2644b;
+        background-color: #F7901E ;
         
       }
     }
@@ -114,8 +123,10 @@
   .container {
     padding: 5%;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
     h3{
-      color: var(--color-text);
+
     }
   .containerItems{
     gap: 1.5rem;
@@ -146,7 +157,7 @@
     }
     button{
       padding-block:1rem ;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       white-space: nowrap;
     }
   }

@@ -3,26 +3,27 @@ import imagePatient from "../../../assets/images/paciente.jpg";
 
 export default function Section6() {
   return (
-    <div className={s.container}>
+    <section className={s.container} id="section6">
       <div className={s.containerData}>
-        <h3>The Wellory Story</h3>
+        <h3>Sobre nosotros</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad
-          iure officia nam voluptas sequi debitis quis dolore cupiditate maiores
-          sapiente fuga soluta minus porro doloribus quaerat laudantium,
-          repudiandae reprehenderit?
+          De nutriólogo a nutriólogo, comprendemos la complejidad de tu trabajo
+          y los obstáculos que enfrentas en la gestión diaria de tu consulta.
+          Por eso, desarrollamos este software con el propósito de facilitar tus
+          procesos, optimizando la organización de citas, expedientes y
+          seguimiento de pacientes.
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          at corporis vitae? Amet facere neque adipisci temporibus incidunt
-          animi, voluptatibus, libero corrupti repellendus eos, quos qui
-          expedita minus. Aspernatur, eaque?
+          Nuestro objetivo es brindarte una herramienta integral que no solo
+          simplifique tu carga de trabajo, sino que también mejore la calidad de
+          atención que puedes ofrecer. Estamos comprometidos a ser tu software
+          confiable en el camino hacia una práctica más eficiente y exitosa.
         </p>
-        <a href="">Ir a ver mas...</a>
+        {/* <a href="">Ir a ver mas...</a> */}
       </div>
       <div className={s.containerImage}>
-        <img src={imagePatient} alt="paciente feliz" />
+        <img loading="lazy" src={imagePatient} alt="paciente feliz" />
       </div>
-    </div>
+    </section>
   );
 }

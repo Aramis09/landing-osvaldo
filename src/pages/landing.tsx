@@ -1,28 +1,48 @@
-import Presentation from "../components/sections/section1/presentation";
+import Section1 from "../components/sections/section1/section1";
 // import MiddleFooter from "../components/sections/middleFooter/middleFooter";
-import FirstExplain from "../components/sections/section2/firstExplain";
-import ViewCards from "../components/sections/section4/viewCards";
+import Section2 from "../components/sections/section2/section2";
+// import Section4 from "../components/sections/section4/section4";
 import Section3 from "../components/sections/section3/section3";
-import ViewCardImages from "../components/sections/section5/viewCardImages";
+// import Section5 from "../components/sections/section5/section5";
 import Section6 from "../components/sections/section6/section6";
 import Section7 from "../components/sections/section7/section7";
-import Section8 from "../components/sections/section8/section8";
-import Section9 from "../components/sections/section9/section9";
+// import Section8 from "../components/sections/section8/section8";
+// import Section9 from "../components/sections/section9/section9";
 import Section10 from "../components/sections/section10/section10";
+import burgerIcon from "../assets/icons/burguer.svg";
+import crossIcon from "../assets/icons/cross.svg";
+import s from "./landing.module.scss";
+import { useState } from "react";
+import Navbar from "../components/navbar/navbar";
 
 export default function Landing() {
+  const [showNavbar, setShowNavbar] = useState(false);
+  console.log(showNavbar);
+
   return (
-    <div style={{ width: "100%" }}>
-      <Presentation />
+    <div className={s.container}>
+      <img
+        loading="lazy"
+        src={showNavbar ? crossIcon : burgerIcon}
+        alt="menu"
+        className={s.menuIcon}
+        style={{
+          display: window.innerWidth < 1025 ? "block" : "none",
+          zIndex: "200",
+        }}
+        onClick={() => setShowNavbar(!showNavbar)}
+      />
+      <Navbar showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
+      <Section1 />
       {/* <MiddleFooter /> */}
-      <FirstExplain />
+      <Section2 />
       <Section3 />
-      <ViewCards />
-      <ViewCardImages />
+      {/* <Section4 /> */}
+      {/* <Section5 /> */}
       <Section6 />
       <Section7 />
-      <Section8 />
-      <Section9 />
+      {/* <Section8 /> */}
+      {/* <Section9 /> */}
       <Section10 />
     </div>
   );

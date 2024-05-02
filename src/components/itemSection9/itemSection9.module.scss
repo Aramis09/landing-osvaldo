@@ -10,8 +10,8 @@
   justify-content: space-between;
   align-items: start;
   gap: 3rem;
-  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.471);
-  transition: transform 0.2s;
+  // box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.471);
+  // transition: transform 0.2s;
   .firstText,b {
     color: var(--color-secondary);
   }
@@ -29,9 +29,9 @@
 }
 
 
-.container:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
+// .container:hover {
+//   transform: scale(1.05);
+//   cursor: pointer;
+// }
 
 

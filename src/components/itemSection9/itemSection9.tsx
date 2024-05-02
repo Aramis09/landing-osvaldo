@@ -1,4 +1,4 @@
-import s from "./itemPrice.module.scss";
+import s from "./itemSection9.module.scss";
 import ButtonGreen from "../buttonGreen/buttonGreen";
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
   frecuency: string;
 }
 
-export default function ItemPrice({ price, frecuency }: Props) {
+export default function ItemSection9({ price, frecuency }: Props) {
   return (
     <div className={s.container}>
       <p className={s.firstText}>No se que dice</p>

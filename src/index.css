@@ -1,4 +1,9 @@
 
+
+
+
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -16,10 +21,18 @@
 
 :root {
   --color-primary: #fdf6e9;
+
   --color-primary-variant: #edceaa;
-  --color-secondary: #f2644b;
-  --color-tertiary:#6d2936;
-  --color-text:#6b2733;
+  /* --color-secondary: #f2644b; */
+  --color-secondary: #276b2d;
+  --color-titles: #2FBA17;
+
+  /* --color-tertiary:#6d2936; */
+  --color-text:#6b2733; 
+  --color-tertiary:#157904;
+
+  /* --color-text:#157904; */
+
   --color-quaternary:#ccda4b;
   font-family:Quicksand-Regular ;
 }
@@ -60,8 +73,38 @@
 
 body {
   margin: 0;
+
+  .swiper{
+    width: 60%;
+  }
+  .swiper-wrapper {
+    width: 100%;
+
+  }
+  
+  .swiper-slide {
+    height: 100%;
+  }
+
 }
 
+@media screen and (min-width: 270px) and (max-width: 1024px) {
+body {
+  scroll-behavior:smooth;
+  .swiper{
+    width: 100%;
+  }
+  .swiper-wrapper {
+    width: 100%;
+
+  }
+  
+  .swiper-slide {
+    width: 300px;
+    height: 100%;
+  }
+}
+}
 /**
  * Render the `main` element consistently in IE.
  */

@@ -1,4 +1,4 @@
-import s from "./texBox.module.scss";
+import s from "./texBoxSection7.module.scss";
 import iconCheck from "../../assets/icons/check.svg";
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   title: string;
 }
 
-export default function TexBox({ title, listLeft, listRight }: Props) {
+export default function TexBoxSection7({ title, listLeft, listRight }: Props) {
   return (
     <div className={s.container}>
       <h4>{title}</h4>
@@ -15,7 +15,7 @@ export default function TexBox({ title, listLeft, listRight }: Props) {
         <div className={s.list}>
           {listLeft.map((item) => (
             <div className={s.item}>
-              <img src={iconCheck} alt="check" />
+              <img loading="lazy" src={iconCheck} alt="check" />
               <div>
                 <h5>{item.title}</h5>
                 <p>{item.text}</p>
@@ -26,7 +26,7 @@ export default function TexBox({ title, listLeft, listRight }: Props) {
         <div className={s.list}>
           {listRight.map((item) => (
             <div className={s.item}>
-              <img src={iconCheck} alt="check" />
+              <img loading="lazy" src={iconCheck} alt="check" />
               <div>
                 <h5>{item.title}</h5>
                 <p>{item.text}</p>

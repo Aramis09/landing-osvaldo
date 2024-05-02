@@ -29,30 +29,33 @@
 
 @media screen and (min-width: 270px) and (max-width: 1024px) {
   .container {
-    padding-inline: 10%;
     padding-bottom: auto;
     gap: 2rem;
     overflow: hidden;
-
+    padding-inline: 0%;
     h3{
       font-size: 2rem;
+      padding-inline: 10%;
+
     }
     p {
       font-size: 1.1rem;
-    }
-    .containerItems{
-      overflow-x: auto;
-      padding-left: 100%;
-      padding-block: 5%;
       padding-inline: 10%;
-      overscroll-behavior-inline: contain ;
+
     }
-    .containerItems > :first-child {
-      margin-left: 300px; /* Ajusta el valor según sea necesario */
-    }
-    .containerItems::webkit::-webkit-scrollbar{
-      width: 0px;
-    }
+    // .containerItems{
+    //   overflow-x: auto;
+    //   padding-left: 100%;
+    //   padding-block: 5%;
+    //   padding-inline: 10%;
+    //   overscroll-behavior-inline: contain ;
+    // }
+    // .containerItems > :first-child {
+    //   margin-left: 300px; /* Ajusta el valor según sea necesario */
+    // }
+    // .containerItems::webkit::-webkit-scrollbar{
+    //   width: 0px;
+    // }
   
   }
 }

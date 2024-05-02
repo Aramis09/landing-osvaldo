@@ -3,9 +3,9 @@ import s from "./section10.module.scss";
 
 export default function Section10() {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="section10">
       <h3>
-        Class Begins <b>Soon!</b>
+        Class Begins <b>Soon</b>
       </h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facere
